@@ -1,0 +1,1279 @@
+/*
+* Copyright 2016 Logustra
+* To use this theme you must have a license purchase
+*
+* 01. General Styles
+* 02. Navbar
+* 03. Home
+* 04. About
+* 05. Services
+* 06. Skills
+* 07. Portfolio
+* 08. Countup
+* 09. Team
+* 10. Support
+* 11. Contact
+* 12. Map
+* 13. Footer
+* 14. Media Query
+*/
+
+/* ==========================================================================
+   01. General Styles
+   ========================================================================== */
+
+@import url("../css/preloader.css");
+
+.title > h2 {
+  margin: 0;
+  padding: 80px 0 65px 0;
+  font-size: 3em;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+/* ==========================================================================
+   02. Navbar
+   ========================================================================== */
+
+header .navbar {
+  z-index: 500;
+}
+
+header .navbar-default {
+  background-color: #4b5272;
+  border: none;
+}
+
+header .navbar-default .navbar-nav li > a {
+  margin-top: 18px;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+header .navbar-default .navbar-nav li > a,
+header .navbar-default .navbar-nav li > a:hover {
+  color: #fff;
+}
+
+header .navbar-default .navbar-nav li.active > a {
+  background-color: transparent;
+  border-bottom: 2px solid #0088CC;
+  color: #0088CC;
+}
+
+header .navbar-default .navbar-nav li.active > a:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #0088CC;
+  color: #0088CC;
+}
+
+header .navbar-default .navbar-nav li > a:focus,
+header .navbar-default .navbar-nav li > a:hover {
+  background-color: transparent;
+  color: #00ca74;
+}
+
+header .navbar-header {
+  padding: 20px 30px;
+  -webkit-transition: all .5s ease-out;
+          transition: all .5s ease-out;
+}
+
+header .navbar-brand div > p {
+  font-size: 2.5em;
+  font-family: "Great Vibes", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+header .inbody {
+  background: #182026;
+}
+
+header .inbody .navbar-header {
+  padding: 10px 30px;
+}
+
+header .inbody .navbar-brand div > p {
+  font-size: 2em;
+}
+
+header .inbody .navbar-nav li > a {
+  margin-top: 9px;
+}
+
+
+/* ==========================================================================
+   03. Home
+   ========================================================================== */
+
+header .home {
+  height: 700px;
+  margin: 0;
+  background: url(../images/bg-mountain.png) no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed ; /* parallax effect  */
+}
+
+header .home figure {
+  padding-top: 170px;
+  text-align: center;
+}
+
+header .home figure > img {
+  max-width: 250px;
+  padding: 6px 6px;
+  background-color: transparent;
+  border: 5px solid #fff;
+}
+
+header .home figcaption {
+  padding: 15px 0;
+  text-align: center;
+}
+
+header .home figcaption > .name > h1,
+header .home figcaption > .detail > p {
+  font-size: 4em;
+  font-family: "Poiret One", arial;
+  color: #fff;
+  line-height: 35px;
+}
+
+header .home figcaption > .detail > p {
+  font-size: 2em;
+
+}
+
+/* ==========================================================================
+   04. About
+   ========================================================================== */
+
+section.about > .container {
+  padding-bottom: 100px;
+}
+
+section.about .nav-justified li > a {
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+}
+
+section.about .nav-justified li > a:hover {
+  background-color: transparent;
+}
+
+section.about .nav-justified li.active > a {
+  background-color: transparent;
+}
+
+section.about .nav-justified li > a + span {
+  display: block;
+  position: absolute;
+  width: calc(100% - 60px);
+  height: 4px;
+  left: 25px;
+  bottom: -10px;
+  background: #0088CC;
+}
+
+section.about .nav-justified li > a:hover + span {
+   background: #333;
+   -webkit-animation: ul 0.6s ease-out;
+           animation: ul 0.6s ease-out;
+}
+
+@-webkit-keyframes ul {
+ 	0%   {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 60px);
+  }
+}
+
+@keyframes ul {
+ 	0%   {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 60px);
+  }
+}
+
+section.about .media {
+  margin-top: 20px;
+}
+
+section.about .media .media-left {
+  width: 325px;
+  padding-top: 50px;
+}
+
+section.about .media .media-body {
+  padding-top: 75px;
+}
+
+section.about .media .media-body > p {
+  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+section.about .accordion {
+  padding-top: 80px;
+}
+
+section.about .panel {
+  box-shadow: none;
+}
+
+section.about .panel > a {
+  text-decoration: none;
+  color: #457B7F;
+}
+
+section.about .panel a > p {
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+section.about .panel div > p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  border-bottom: 1px solid #457B7F;
+  color: #457B7F;
+}
+
+section.about blockquote {
+  padding-top: 65px;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  border-left: 0;
+}
+
+/* ==========================================================================
+   05. Service
+   ========================================================================== */
+
+section.service {
+  background-color: #f7f7f7;
+}
+
+section.service > .container {
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+section.service .bg-img {
+  display: block;
+  max-width: 195px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 5px #0088CC;
+  -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+}
+
+section.service .bg-img:hover {
+  box-shadow: inset 0 0 0 8px #0088CC;
+}
+
+section.service .bg-img > img {
+  max-width: 190px;
+  padding: 40px 40px;
+}
+
+section.service figure > figcaption {
+  margin-top: 40px;
+}
+
+section.service figure > figcaption > h3,
+section.service figure > figcaption > h3 + p {
+  font-family: "Poppins", sans-serif;
+}
+
+section.service figure > figcaption > h3 + p {
+  padding: 5px 60px;
+  font-weight: 300;
+}
+
+/* ==========================================================================
+   06. Skills
+   ========================================================================== */
+
+section.skills {
+  background: url(../images/bg-skills.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed ; /* parallax effect  */
+  color: #fff;
+}
+
+section.skills > .container {
+  padding-bottom: 100px;
+}
+
+section.skills .detail-skill {
+  padding-top: 65px;
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: right;
+}
+
+section.skills .chart-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.skills .jqbar {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+section.skills .jqbar span {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+section.skills .jqbar .bar-percent {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+section.skills .jqbar .bar-level-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+section.skills .jqbar .bar-level {
+  position: absolute;
+}
+
+section.skills .bars {
+  font-family: "Poppins", sans-serif;
+}
+
+section.skills .col {
+  float: left;
+  width: 85px;
+  position: relative;
+}
+
+section.skills .col6 {
+  float: left;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   07. Portfolio
+   ========================================================================== */
+
+section.portfolio h2 {
+  padding-bottom: 0;
+}
+
+section.portfolio h2 + p {
+  padding: 5px 200px;
+  padding-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+section.portfolio .button-group {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+section.portfolio .button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 4px;
+  color: #222;
+  cursor: pointer;
+}
+
+section.portfolio .button:hover {
+  background-color: #8CF;
+  color: #222;
+}
+
+section.portfolio .button:active,
+section.portfolio .is-checked,
+section.portfolio .is-checked:focus {
+  background-color: #0088CC;
+}
+
+section.portfolio .is-checked,
+section.portfolio .is-checked:hover {
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0%, 0%, 0.8);
+}
+/* ---- isotope ---- */
+
+section.portfolio .grid {
+  display: block;
+  margin: 0 70px;
+  margin-bottom: 50px;
+}
+
+/* clear fix */
+section.portfolio .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+section.portfolio figure {
+  display: inline-block;
+  position: relative;
+  width: 315px;
+  margin: 8px;
+  background-color: #222222;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+section.portfolio figure * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+          transition: all 0.45s ease;
+}
+
+section.portfolio figure:after {
+  content: '';
+  width: 10px;
+  position: absolute;
+  background-color: #0088CC;
+  bottom: 0;
+  height: 0;
+  right: 0;
+  -webkit-transition: all 0.45s ease;
+          transition: all 0.45s ease;
+}
+
+section.portfolio figure:hover:after {
+  height: 100%;
+}
+
+section.portfolio figure > img {
+  display: block;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+section.portfolio figure:hover > img {
+  opacity: 0.1;
+}
+
+section.portfolio figure figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 1em;
+  opacity: 0;
+  z-index: 1;
+}
+
+section.portfolio figure:hover figcaption {
+  opacity: 1;
+}
+
+section.portfolio figcaption > h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-family: "Poppins",sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+section.portfolio figcaption > h3 > span {
+  display: block;
+  font-size: .7em;
+  font-family: "Roboto",sans-serif;
+  font-weight: 100;
+}
+
+section.portfolio figure a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   08. Countup
+   ========================================================================== */
+
+section.countup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 350px;
+  margin-top: 80px;
+  background: url('../images/bg-project.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+section.countup .countup-group1,
+section.countup .countup-group2,
+section.countup .countup-group3,
+section.countup .countup-group4 {
+  text-align: center;
+}
+
+section.countup .counter {
+  font-size:65px;
+  font-family: "Poppins",sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+section.countup .counter + p {
+  font-size: 1.5em;
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* ==========================================================================
+   09. Team
+   ========================================================================== */
+
+section.team {
+  background-color: #f7f7f7;
+}
+
+section.team h2 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+section.team figure {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 310px;
+  margin: 100px 27px;
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  color: #2B2B2B;
+  overflow: hidden;
+  box-shadow: 0 0 50px -15px rgba(0,0,0,0.75);
+  -webkit-transition: all .6s ease-in-out;
+          transition: all .6s ease-in-out;
+}
+
+section.team figure:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 1px solid #0088cc;
+  border-radius: 25px;
+  box-shadow: none;
+}
+
+section.team .profile-image {
+  padding: 15% 10% 0;
+}
+
+section.team .profile-image img {
+  max-width: 40%;
+  position: relative;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+section.team figure > figcaption {
+  padding: 5% 10% 15%;
+}
+
+section.team figcaption > h3 {
+  margin: 3px 0;
+  font-size: 20px;
+  font-family: "Poppins",sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+section.team figcaption > h3 + h5 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+section.team figcaption > h5 + p {
+  margin-top: 15px;
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+}
+
+section.team .icons i {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.5em;
+  color: #999;
+}
+
+section.team .icons i:hover {
+  color: #555;
+}
+
+section.team .carousel-control.left,
+section.team .carousel-control.right {
+  background: none;
+  width: 60px;
+}
+
+section.team .carousel-control.left {
+  left: -25px;
+}
+
+section.team .carousel-control.right {
+  right: -25px;
+}
+
+/* ==========================================================================
+   10. Support
+   ========================================================================== */
+
+section.support {
+  margin-top: 45px;
+  min-height: 125px;
+  background: #fff;
+}
+
+section.support .item{
+  margin: 3px;
+}
+section.support .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   11. Contact
+   ========================================================================== */
+
+section.contact {
+  background: url(../images/bg-contactme.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; /* parallax effect  */
+  color: #fff;
+}
+
+section.contact > .container {
+  padding-bottom: 100px;
+}
+
+section.contact .title > h2 {
+  padding-bottom: 0;
+}
+
+section.contact .title > h2 + p {
+  padding: 0 300px;
+  padding-bottom: 65px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+section.contact .form-group > input {
+  padding-left: 55px;
+}
+
+section.contact .form-control {
+  height: 52px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  border-bottom: 5px solid #0088CC;
+  color: white;
+}
+
+section.contact .form-control + .fa {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+}
+
+section.contact .message {
+  height: 245px;
+}
+
+section.contact .send{
+  height: 62px;
+  margin-top: 25px;
+  font-size: 1.3em;
+  background-color: #0088CC;
+  border-radius: 50px;
+  border-bottom: 0;
+  -webkit-transition: background .3s ease-in;
+          transition: background .3s ease-in;
+}
+
+section.contact .send:hover {
+  background-color: #fff;
+  color: #0088CC;
+}
+
+/* ==========================================================================
+   12. Map
+   ========================================================================== */
+
+section.map {
+  width: 100%;
+  height: 600px;
+}
+
+/* ==========================================================================
+   13. Footer
+   ========================================================================== */
+
+footer {
+  background-color: #182026;
+}
+
+footer > .detail-footer {
+  padding: 100px 0;
+  font-family: "Roboto", arial ;
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+}
+
+footer > .detail-footer > p {
+  font-size: 1.6em;
+}
+
+footer > .detail-footer > p > a {
+  text-decoration: none;
+}
+
+footer .fa-circle{
+  color: #0088CC;
+}
+
+footer .fa:hover{
+  color: #182026;
+  -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+}
+
+/* ==========================================================================
+   14. Media Query
+   ========================================================================== */
+
+@media only screen
+and (max-width: 1199px) {
+  section.about .media .media-left {
+    width: 280px;
+  }
+
+  section.about .media .media-body > p {
+    padding-top: 0;
+  }
+
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 20px;
+  }
+
+  section.skills .detail-skill {
+    padding-top: 0;
+    padding-bottom: 55px;
+  }
+
+  section.portfolio .title > h2 + p {
+    padding: 0 100px;
+    padding-bottom: 25px;
+  }
+
+  section.portfolio .grid {
+    margin: 0 23px;
+  }
+
+  section.portfolio figure {
+    width: 280px;
+  }
+
+  section.team {
+    padding-bottom: 80px;
+  }
+
+  section.team h2 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  section.team figure {
+    margin: 40px 0;
+  }
+  section.contact .title > h2 + p {
+    padding: 0 180px;
+    padding-bottom: 65px;
+  }
+}
+
+@media only screen
+and (max-width: 1024px) {
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 35px;
+  }
+
+  section.portfolio h2 + p {
+    padding: 5px 100px;
+    padding-bottom: 25px;
+  }
+
+  section.team figure {
+    max-width: 400px;
+    margin: 25px 25px;
+  }
+
+  section.contact h2 + p{
+    padding: 0 100px;
+    padding-bottom: 65px;
+  }
+}
+
+
+@media only screen
+and (max-width: 991px) {
+  section.about .media .media-left {
+    width: 500px;
+  }
+
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 0;
+  }
+
+  section.portfolio h2 + p {
+    padding: 5px 60px;
+    padding-bottom: 25px;
+  }
+
+  section.portfolio .grid {
+    margin: 0 35px;
+  }
+
+  section.portfolio figure {
+    width: 300px;
+  }
+
+  section.team figure {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px 25px;
+  }
+
+  section.countup .countup-group1,
+  section.countup .countup-group2 {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+
+  section.countup .countup-group3,
+  section.countup .countup-group4 {
+    margin-bottom: 70px;
+  }
+
+  section.contact > .container {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen
+and (max-width: 900px) {
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 0;
+  }
+
+  section.portfolio .title > h2 + p {
+    padding: 0 35px;
+    padding-bottom: 65px;
+  }
+
+  section.contact .title > h2 + p {
+    padding: 0 85px;
+    padding-bottom: 65px;
+  }
+}
+
+@media only screen
+and (max-width: 767px) {
+  header .navbar-default .navbar-nav li > a {
+    letter-spacing: 0;
+  }
+
+  header .navbar-default .navbar-nav li.active > a {
+    border-bottom: none;
+    border-left: 5px solid #0088CC;
+    color: #0088CC;
+    letter-spacing: 4px;
+    -webkit-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+  }
+
+  header .navbar-default .navbar-nav li.active > a:focus,
+  header .navbar-default .navbar-nav li.active > a:hover {
+    background: transparent;
+    border-bottom: none;
+    color: #0088CC;
+  }
+
+  section.about .nav-justified {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  section.about .nav-justified li > a + span {
+    width: calc(100% - 20px);
+    left: 10px;
+  }
+
+  section.about .nav-justified li > a:hover + span {
+     background:#333;
+     -webkit-animation:ul 0.6s ease-out;
+             animation:ul 0.6s ease-out;
+  }
+
+  @-webkit-keyframes ul {
+   	0%   {
+      width: 0;
+    }
+
+    100% {
+      width: calc(100% - 20px);
+    }
+  }
+
+  @keyframes ul {
+   	0%   {
+      width: 0;
+    }
+
+    100% {
+      width: calc(100% - 20px);
+    }
+  }
+
+  section.service h2 {
+    padding-bottom: 20px;
+  }
+
+  section.service figure {
+    padding: 25px 0;
+  }
+
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 165px;
+  }
+
+  section.portfolio .title > h2 + p {
+    padding: 0 70px;
+    padding-bottom: 25px;
+  }
+
+  section.portfolio .grid {
+    margin: 0 85px;
+    margin-bottom: 50px;
+  }
+
+  section.portfolio figure {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  section.countup .countup-group1 {
+    margin-top: 125px;
+  }
+
+  section.countup .countup-group4 {
+    margin-bottom: 125px;
+  }
+}
+
+@media only screen
+and (max-width: 600px) {
+  section.about .nav-justified {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  section.about .media .media-left {
+    width: 400px;
+  }
+
+  section.about .nav-justified li > a + span {
+    width: calc(100% - 20px);
+    left: 10px;
+  }
+
+  section.about .nav-justified li > a:hover + span {
+     background:#333;
+     -webkit-animation:ul 0.6s ease-out;
+             animation:ul 0.6s ease-out;
+  }
+
+  @-webkit-keyframes ul {
+   	0%   {
+      width: 0;
+    }
+
+    100% {
+      width: calc(100% - 20px);
+    }
+  }
+
+  @keyframes ul {
+   	0%   {
+      width: 0;
+    }
+    100% {
+      width: calc(100% - 20px);
+    }
+  }
+
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 125px;
+  }
+
+  section.portfolio .title > h2 + p {
+    padding: 5px 50px;
+    padding-bottom: 25px;
+  }
+
+  section.portfolio .grid {
+    left: -8px;
+    margin: 0 80px;
+  }
+
+  section.contact .title h2 + p {
+    padding: 0 50px;
+    padding-bottom: 65px;
+  }
+}
+
+@media only screen
+and (max-width: 540px) {
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 80px;
+  }
+
+  section.skills .col6 {
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  section.portfolio .grid {
+    margin: 0 65px;
+  }
+}
+
+@media only screen
+and (max-width: 480px) {
+  section.about .media .media-left {
+    width: 325px;
+  }
+
+  section.portfolio .title > h2 + p {
+    padding: 0 10px;
+    padding-bottom: 25px;
+  }
+
+  section.portfolio .button {
+    margin-left: 2px;
+    margin-bottom: 5px;
+  }
+
+  section.team figure {
+    max-width: 300px;
+    margin: 30px 27px;
+  }
+}
+
+@media only screen
+and (max-width: 420px) {
+  section.about .media .media-left {
+    width: 300px;
+  }
+
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 50px;
+  }
+
+  section.about .nav-justified {
+    display: block;
+  }
+
+  section.about .nav-justified li > a + span {
+    width: calc(100% - 75px);
+    left: 32px;
+    margin-bottom: 10px;
+  }
+
+  section.about .nav-justified li > a:hover + span {
+     background:#333;
+     -webkit-animation:ul 0.6s ease-out;
+             animation:ul 0.6s ease-out;
+  }
+
+  @-webkit-keyframes ul {
+   	0%   {
+      width:0;
+    }
+
+    100% {
+      width: calc(100% - 75px);
+    }
+  }
+
+  @keyframes ul {
+   	0%   {
+      width:0;
+    }
+
+    100% {
+      width: calc(100% - 75px);
+    }
+  }
+}
+
+@media only screen
+and (max-width: 375px) {
+  header .home figcaption > .name > h1,
+  header .home figcaption > .detail > p {
+    font-size: 3.2em;
+    font-family: "Poiret One", arial;
+    color: #fff;
+    line-height: 25px;
+  }
+
+  header .home figcaption > .detail > p {
+    font-size: 1.7em;
+
+  }
+
+  section.about .media .media-left {
+    width: 240px;
+  }
+
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 30px;
+  }
+
+  section.portfolio .grid {
+    margin: 0 40px;
+  }
+
+  section.team figure {
+    max-width: 275px;
+    margin: 30px 27px;
+  }
+
+  section.contact .title h2 + p {
+    padding: 0 30px;
+    padding-bottom: 65px;
+  }
+}
+
+@media only screen
+and (max-width: 320px) {
+  section.service figure > figcaption > h3 + p {
+    padding: 5px 25px;
+  }
+
+  section.team figure {
+    max-width: 230px;
+    margin: 30px 22px;
+  }
+
+  section.contact .title h2 + p {
+    padding: 0 5px;
+    padding-bottom: 65px;
+  }
+}
